@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/infoText"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292121"
+    android:padding="7dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Delete Post"
+        app:layout_constraintEnd_toEndOf="@+id/patchBtn"
+        app:layout_constraintStart_toStartOf="@+id/patchBtn"
+        app:layout_constraintTop_toBottomOf="@+id/patchBtn" />
+
+    <Button
+        android:id="@+id/getBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Get Post"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/putBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Put Post"
+        app:layout_constraintEnd_toEndOf="@+id/postBtn"
+        app:layout_constraintStart_toStartOf="@+id/postBtn"
+        app:layout_constraintTop_toBottomOf="@+id/postBtn" />
+
+    <Button
+        android:id="@+id/postBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Create Post"
+        app:layout_constraintEnd_toEndOf="@+id/getCommentBtn"
+        app:layout_constraintStart_toStartOf="@+id/getCommentBtn"
+        app:layout_constraintTop_toBottomOf="@+id/getCommentBtn" />
+
+    <Button
+        android:id="@+id/patchBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Patch Post"
+        app:layout_constraintEnd_toEndOf="@+id/putBtn"
+        app:layout_constraintStart_toStartOf="@+id/putBtn"
+        app:layout_constraintTop_toBottomOf="@+id/putBtn" />
+
+    <Button
+        android:id="@+id/getCommentBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Get Comment"
+        app:layout_constraintEnd_toEndOf="@+id/getBtn"
+        app:layout_constraintStart_toStartOf="@+id/getBtn"
+        app:layout_constraintTop_toBottomOf="@+id/getBtn" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="A Simple App To Show the Use of Retrofit using a Rest API(JsonPlaceHolder)"
+        android:textAlignment="center"
+        android:textColor="#1C9948"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
